@@ -1,7 +1,7 @@
 # Docker Cheat Sheet
 
 ## Table of Contents
-* [What is Docker](#what is docker)
+
 * [Why Docker](#why-docker)
 * [Prerequisites](#prerequisites)
 * [Installation](#installation)
