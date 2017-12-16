@@ -3,8 +3,6 @@
 ## Table of Contents
 
 * [Why Docker](#why-docker)
-* [Prerequisites](#prerequisites)
-* [Installation](#installation)
 * [Containers](#containers)
 * [Images](#images)
 * [Networks](#networks)
