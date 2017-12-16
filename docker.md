@@ -1,9 +1,7 @@
 # Docker Cheat Sheet
 
-**Want to improve this cheat sheet?  See the [Contributing](#contributing) section!**
-
 ## Table of Contents
-
+* [What is Docker](#what is docker)
 * [Why Docker](#why-docker)
 * [Prerequisites](#prerequisites)
 * [Installation](#installation)
@@ -21,7 +19,7 @@
 * [Tips](#tips)
 * [Contributing](#contributing)
 
-## what is Docker ?
+## what is Docker
 
 Lightweight,opensource,secure platform
 simplify building,shipping,running apps
