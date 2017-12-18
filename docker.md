@@ -1,4 +1,3 @@
-# Docker Cheat Sheet
 
 ## Table of Contents
 
