@@ -60,18 +60,16 @@ docker-machine ip manager1
 ```
 
 
-## Tutorial with Rancher
+## Tutorial with nginx
 
 ### Setup/Prerequisites
-We are going to use Rancher to visualize what's happening on our machines.  http://rancher.com
+We are going to use Rancher to visualize what's happening on our machines.  http://ip:8080 
 * Start rancher on `manager1`
 ```
 eval $(docker-machine env manager1)
-docker run -d --restart=always -p 8080:8080 rancher/server
+docker run -d --restart=always -p 80:8080 nginx
 ```
 * Wait a few mins and then navigate to http://<manager1 ip>:8080.  
-* Add all 3 machines as hosts in rancher following these directions: http://docs.rancher.com/rancher/latest/en/hosts/custom/
-
 You are now ready to try out some various components of Docker 1.12 and the changes will be visualized in Rancher
 
 * Create the swarm
