@@ -1,0 +1,219 @@
+{
+        "Id": "21c515b5fe64764507e545d38f7c7a5dfaeb6993153735e1b0fd4d91d577360a",
+        "Created": "2018-02-24T03:44:24.507369708Z",
+        "Path": "/bin/alertmanager",
+        "Args": [
+            "-config.file=/etc/alertmanager/config.yml",
+            "-storage.path=/alertmanager"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 2702,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2018-03-11T05:28:18.442701782Z",
+            "FinishedAt": "2018-03-11T05:16:12.913484192Z"
+        },
+        "Image": "sha256:f87cbd5f13606344179313a40f02e54b0ef936826efc2a38e34c2e8cf85bac28",
+        "ResolvConfPath": "/var/lib/docker/containers/21c515b5fe64764507e545d38f7c7a5dfaeb6993153735e1b0fd4d91d577360a/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/21c515b5fe64764507e545d38f7c7a5dfaeb6993153735e1b0fd4d91d577360a/hostname",
+        "HostsPath": "/var/lib/docker/containers/21c515b5fe64764507e545d38f7c7a5dfaeb6993153735e1b0fd4d91d577360a/hosts",
+        "LogPath": "/var/lib/docker/containers/21c515b5fe64764507e545d38f7c7a5dfaeb6993153735e1b0fd4d91d577360a/21c515b5fe64764507e545d38f7c7a5dfaeb6993153735e1b0fd4d91d577360a-json.log",
+        "Name": "/alertmanager",
+        "RestartCount": 0,
+        "Driver": "overlay2",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "docker-default",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": [
+                "/home/thinkcenter/Documents/monitor_cpu/dockprom/alertmanager:/etc/alertmanager:rw"
+            ],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "dockprom_monitor-net",
+            "PortBindings": {},
+            "RestartPolicy": {
+                "Name": "unless-stopped",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": [],
+            "CapAdd": null,
+            "CapDrop": null,
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": null,
+            "GroupAdd": null,
+            "IpcMode": "shareable",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": null,
+            "DeviceCgroupRules": null,
+            "DiskQuota": 0,
+            "KernelMemory": 0,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": false,
+            "PidsLimit": 0,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0
+        },
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/c126640d587ceff3bc1a2337379172e8685b16fae1dd8caccc62893637159c22-init/diff:/var/lib/docker/overlay2/919caf97d20fc48c5d58609399c3cae1665a66a0b909302e4531d0ebde76f628/diff:/var/lib/docker/overlay2/6d7f96a32df4ecebdda07b05430f2e9226d28b2a593cdc8f391826fb964eb1a6/diff:/var/lib/docker/overlay2/6a25d701fd81820644c538cebffe1cb35a41e94a15aac706febaa61a8313b24e/diff:/var/lib/docker/overlay2/bcad3fc4461efbcf81464a75ecf56ee99915934d28a0575de05fbcd11ffe09fd/diff:/var/lib/docker/overlay2/6b995cfce55afb531c17439e4c18b0a405f8865052a7e94df3e2164259eb05d9/diff:/var/lib/docker/overlay2/ac7e0f78e76fac295b34aa134fe2dbcc95aa1dbcfdf726c2faa12a0d43e9e2f5/diff:/var/lib/docker/overlay2/61413f285577aec768b8e42b7cae9320a26486f27222b7b50dd291b98295da48/diff:/var/lib/docker/overlay2/fabb2bb129f79338b21a433985aba04e47070f936905e5d02c777b574d6e721f/diff:/var/lib/docker/overlay2/40b6761cd5af2d1f11e088e7457c5170d5ca21444779e3c770603d6ff9ac4cd2/diff:/var/lib/docker/overlay2/b6aed5bfd10d59773a240e3e58848f73b454f3e10bec426a5de3232146ab0150/diff:/var/lib/docker/overlay2/b7f80d418ba318fc64445ec494aebd1a5ad3fa134b0502348d8e9e87b84cec1a/diff",
+                "MergedDir": "/var/lib/docker/overlay2/c126640d587ceff3bc1a2337379172e8685b16fae1dd8caccc62893637159c22/merged",
+                "UpperDir": "/var/lib/docker/overlay2/c126640d587ceff3bc1a2337379172e8685b16fae1dd8caccc62893637159c22/diff",
+                "WorkDir": "/var/lib/docker/overlay2/c126640d587ceff3bc1a2337379172e8685b16fae1dd8caccc62893637159c22/work"
+            },
+            "Name": "overlay2"
+        },
+        "Mounts": [
+            {
+                "Type": "bind",
+                "Source": "/home/thinkcenter/Documents/monitor_cpu/dockprom/alertmanager",
+                "Destination": "/etc/alertmanager",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": "rprivate"
+            },
+            {
+                "Type": "volume",
+                "Name": "9034561c73350eba842598e948ab822541aab752bc9845547566cb598443952a",
+                "Source": "/var/lib/docker/volumes/9034561c73350eba842598e948ab822541aab752bc9845547566cb598443952a/_data",
+                "Destination": "/alertmanager",
+                "Driver": "local",
+                "Mode": "",
+                "RW": true,
+                "Propagation": ""
+            }
+        ],
+        "Config": {
+            "Hostname": "21c515b5fe64",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "ExposedPorts": {
+                "9093/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+            ],
+            "Cmd": [
+                "-config.file=/etc/alertmanager/config.yml",
+                "-storage.path=/alertmanager"
+            ],
+            "Image": "prom/alertmanager",
+            "Volumes": {
+                "/alertmanager": {},
+                "/etc/alertmanager": {}
+            },
+            "WorkingDir": "/alertmanager",
+            "Entrypoint": [
+                "/bin/alertmanager"
+            ],
+            "OnBuild": null,
+            "Labels": {
+                "com.docker.compose.config-hash": "c29113d219012bd9f334a1aa8d449eac1f70f522b24272257cbdf42c1fb6c802",
+                "com.docker.compose.container-number": "1",
+                "com.docker.compose.oneoff": "False",
+                "com.docker.compose.project": "dockprom",
+                "com.docker.compose.service": "alertmanager",
+                "com.docker.compose.version": "1.18.0",
+                "org.label-schema.group": "monitoring"
+            }
+        },
+        "NetworkSettings": {
+            "Bridge": "",
+            "SandboxID": "8fbef5d848f34e8e38e5affcee530301f8f571d82bd9fae0cf43fc916fdc2a98",
+            "HairpinMode": false,
+            "LinkLocalIPv6Address": "",
+            "LinkLocalIPv6PrefixLen": 0,
+            "Ports": {
+                "9093/tcp": null
+            },
+            "SandboxKey": "/var/run/docker/netns/8fbef5d848f3",
+            "SecondaryIPAddresses": null,
+            "SecondaryIPv6Addresses": null,
+            "EndpointID": "",
+            "Gateway": "",
+            "GlobalIPv6Address": "",
+            "GlobalIPv6PrefixLen": 0,
+            "IPAddress": "",
+            "IPPrefixLen": 0,
+            "IPv6Gateway": "",
+            "MacAddress": "",
+            "Networks": {
+                "dockprom_monitor-net": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": [
+                        "alertmanager",
+                        "21c515b5fe64"
+                    ],
+                    "NetworkID": "101e1059aa192a22603a99205c9d34ac224457e1b1725c4d40bf9a16855da20c",
+                    "EndpointID": "9c5e7e5cabdb56d34d528baa6aa23bba52fd9ff53b7c07b329748e758b696a41",
+                    "Gateway": "172.18.0.1",
+                    "IPAddress": "172.18.0.5",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "MacAddress": "02:42:ac:12:00:05",
+                    "DriverOpts": null
+                }
+            }
+        }
+    }
