@@ -1,0 +1,75 @@
+
+sudo docker run -d -p 8080:80 --name test_container test/test_nginx_image nginx 
+
+ curl http://docker-host-ip:8080
+ ### linking
+ 
+ docker pull mysql:latest
+ 
+ docker run --name mysql-container -e MYSQL_ROOT_PASSWORD=wordpress -d mysql
+ 
+ docker pull wordpress:latest
+ 
+ docker run -e WORDPRESS_DB_PASSWORD=password --name wordpress-container --link mysql-container:mysql -p 8080:80 -d wordpress
+ 
+ curl localhost:8080
+ 
+ 
+#docker-compose.yml 
+ 
+ web:
+    image: wordpress
+    links:
+     - mysql
+    environment:
+     - WORDPRESS_DB_PASSWORD=sample
+    ports:
+     - "127.0.0.3:8080:80"
+mysql:
+image: mysql:latest
+environment:
+ - MYSQL_ROOT_PASSWORD=sample
+ - MYSQL_DATABASE=wordpress
+ 
+ 
+ docker-compose up
+ 
+ 
+ 
+ ##docker compose
+ 
+ mkdir flask_compose_sample
+ cd flask_compose_sample
+mkdir web
+cd web
+##app.py
+From flask import Flask
+app = Flask(__name__)
+
+@app.route('/')
+def hello_world():
+    return 'Flask Dockerized'
+
+if __name__ == '__main__':
+    app.run(debug=True,host='0.0.0.0')
+
+##requirements.txt
+Flask==0.10.1
+
+##Dockerfile
+
+FROM ubuntu:latest
+MAINTAINER Rajdeep Dua "dua_rajdeep@yahoo.com"
+RUN apt-get update -y
+RUN apt-get install -y python-pip python-dev build-essential
+COPY . /app
+WORKDIR /app
+RUN pip install -r requirements.txt
+ENTRYPOINT ["python"]
+CMD ["app.py"]
+
+docker-compose up
+
+
+
+curl http://localhost:5000
