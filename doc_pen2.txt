@@ -36,10 +36,6 @@
 
 - Automated builds (from GitHub/BitBucket)
 
-- More to come!
-
- We can't confirm or deny if this is an actual example.]
-
 ---
 
 # Docker Hub (low level)
@@ -374,3 +370,28 @@ Note: they both run in containers!
 
 - Continuous deployment
 
+---
+
+
+
+# That's all folks!
+
+---
+
+# Questions?
+
+- To get those slides, follow me on twitter: [@jpetazzo](https://twitter.com/jpetazzo)
+  .small[Yes, this is a particularly evil scheme to increase my follower count]
+
+- Also .red[WE ARE HIRING!]
+
+  - infrastructure (servers, metal, and stuff)
+
+  - QA (get paid to break things!)
+
+  - Python (Docker Hub and more)
+
+  - Go (Docker Engine and more)
+
+- Send your resume to jobs@docker.com 
+  
