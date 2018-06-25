@@ -17,30 +17,13 @@
 ---
 
 
-# Extremely short intro to Docker
-
----
-
 # What's Docker?
 
 - A *platform* made of the *Docker Engine* and the *Docker Hub*
-
 - The *Docker Engine* is a runtime for containers
-
 - It's Open Source, and written in Go 
-  http://www.slideshare.net/testo/docker-and-go-why-did-we-decide-to-write-docker-in-go ]]
+- It's a daemon, controlled by a REST API
 
-- It's a daemon, controlled by a REST.gray[-ish] API
-
-- *What is this, I don't even?!?*
- Check the recording of this online "Docker 101" session:
- https://www.youtube.com/watch?v=pYZPd78F4q4
-
----
-
-# If you've never seen Docker in action ...
-
-This will help!
 
 
 ```
@@ -83,7 +66,7 @@ In [1]:
 
 ---
 
-# What did .underline[not] happen here?
+# What did  happen here?
 
 - We did not make a full copy of the `python` image
 
@@ -153,18 +136,16 @@ How does it work?
 
 - Each memory access goes through it
 
-- Translates memory accesses (location.red[¹] + operation.red[²]) into:
+- Translates memory accesses (location + operation) into:
 
   - actual physical location
 
   - or, alternatively, a *page fault*
 
 
-.footnote[
-.red[¹] Location = address = pointer
+Location = address = pointer
 
-.red[²] Operation = read, write, or exec
-]
+Operation = read, write, or exec
 
 ---
 
